@@ -1,12 +1,10 @@
-# EMPLOYEE-MERN_Docker
-Containerization of MERN Stack using Docker
+# React, Node Js, and MongoDB microservices-based application deployment on Kubernetes
 
+This is a simple Employee application build using MERN Stack. It consist of:
+1. The Front-end application is build using React.
+2. The backend is build using Node Js, Express, and mongoose.
+3. The Database Layer will be using the NoSQL database i.e. MongoDB.
 
-# Docker-compose
-Get docker-compose from here:-
-https://docs.docker.com/compose/install/
+As a brief overview of this employee app, when the user will access the front-end application from the browser, a home page with two navbar option appears. User can first create employer and then after having success added, a alert message of successfully added will be notified.
 
-
-Run these commands in root dir:-
-1. docker-compose build
-2. docker-compose up
+After a successful create, user will be able to view the list of employer with id and name. 
