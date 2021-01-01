@@ -3,8 +3,8 @@
 FROM node:12.20.0-alpine3.10
 
 # Create App Directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+
+WORKDIR /server
 
 # Install Dependencies
 COPY package*.json ./
@@ -12,9 +12,9 @@ COPY package*.json ./
 RUN npm install --silent
 
 # Copy app source code
-COPY . .
+COPY ./src ./src
 
 # Exports
-EXPOSE 3000
+EXPOSE 5000
 
 CMD ["npm","start"]
